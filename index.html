@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Outfit Planner | Myntra</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">Myntra</div>
+            <nav>
+                <a href="#">MEN</a>
+                <a href="#">WOMEN</a>
+                <a href="#">KIDS</a>
+                <a href="#">BEAUTY</a>
+                <input type="text" placeholder="Search for products, brands and more">
+                <a href="#" id="outfitBuilderLink">Outfit Builder</a>
+                <a href="#" id="lookPlannerLink">Look Planner</a>
+                <a href="#">Profile</a>
+                <a href="#">Wishlist</a>
+                <a href="#">Bag</a>
+            </nav>
+        </header>
+        <main>
+            <div class="initial-image">
+                
+            </div>
+            <div id="outfitBuilder" class="section">
+                <h1>Outfit Builder</h1>
+                <div class="builder-container">
+                    <div id="left-side" class="item-container">
+                        <div id="item1" class="outfit" style="background-image: url('images/item1.png');" draggable="true"></div>
+                        <div id="item3" class="outfit" style="background-image: url('images/item3.jpg');" draggable="true"></div>
+                    </div>
+                    <div id="mannequin" class="mannequin-container">
+                        <div id="mannequin-img" class="mannequin-placeholder" style="background-image: url('images/mannequin.png');"></div>
+                    </div>
+                    <div id="right-side" class="item-container">
+                        <div id="item2" class="outfit" style="background-image: url('images/item2.png');" draggable="true"></div>
+                        <div id="item4" class="outfit" style="background-image: url('images/item4.jpg');" draggable="true"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="planner" class="section">
+                <h1>Plan Your Event Outfit</h1>
+                <div class="planner-container" id="plannerContainer">
+                    <div class="calendar-container">
+                        <div class="calendar" id="calendar"></div>
+                    </div>
+                    <div class="event-form-container" id="eventFormContainer">
+                        <div class="event-form">
+                            <h2>Plan Your Event Outfit</h2>
+                            <form id="eventForm">
+                                <label for="eventName">Event Name:</label>
+                                <input type="text" id="eventName" name="eventName">
+                                <label for="eventDateTime">Event Date and Time:</label>
+                                <input type="datetime-local" id="eventDateTime" name="eventDateTime">
+                                <label for="eventType">Event Type:</label>
+                                <select id="eventType" name="eventType">
+                                    <option value="party">Party</option>
+                                    <option value="formal">Formal</option>
+                                    <option value="casual">Casual</option>
+                                </select>
+                                <label for="outfitType">Outfit Type:</label>
+                                <input type="text" id="outfitType" name="outfitType">
+                                <label for="colorPreferences">Color Preferences:</label>
+                                <input type="text" id="colorPreferences" name="colorPreferences">
+                                <label for="budget">Budget (Specify Range):</label>
+                                <input type="text" id="budget" name="budget">
+                                <button type="submit">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
